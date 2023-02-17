@@ -71,6 +71,9 @@ p{
     /*text-align: center;*/
     margin: auto;
 }
+.webpage{
+    background-color: black;
+}
 .container{
     background-color: black;
     padding: 30px;
@@ -273,4 +276,115 @@ p{
         width: 330px;
     }
 }
+.footer{
+    color: var(--light-color);
+    margin-top: 50px;
+    background-color: hsla(0,0%,100%,.05);
+}
+.footer_content{
+    /*max-width: 1000px;*/
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    grid-gap: 20px;
+    font-size: 16px;
+    width: 894px;
+}
+.logo_container{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 154px;
+}
+.social_icons{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 20px;
+}
+.footer a{
+    color: var(--light-color);
+}
+.icon_container{
+    border: 0;
+    box-shadow: none;
+    padding-top: 10px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 144px;
+    height: 154px;
+}
+.footer h2{
+    font-size: 16px;
+    text-transform: uppercase;
+    opacity: .6;
+    padding-bottom: 10px;
+    margin: 0;
+}
+.footer a{
+    color: var(--light-color);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 30px;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+}
+.copyright{
+    width: 230px;
+    height: 154px;
+}
+.copy_para{
+    width:249px;
+    height: 24px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.logo_img{
+    height: 35px;
+}
+@media screen and (max-width: 768px){
+    .social_icons{
+        display: none;
+    }
+    .footer{
+        width: 390px;
+        height: 387px;
+    }
+    .footer_content{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .logo_container, .links, .copyright{
+        margin: 0;
+        text-align: left;
+    }
+    .logo_container{
+        
+        height: 35px;
+        text-align: left;
+    }
+    .links{
+        
+        height: 154px;
+    }
+    .links a{
+        text-align: left;
+        margin: 0;
+    }
+}
+
 
